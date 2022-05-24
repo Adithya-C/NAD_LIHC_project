@@ -1,0 +1,1492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+<model metaid="NAD_liver" id="NAD_liver">
+<annotation/>
+<listOfUnitDefinitions>
+<unitDefinition metaid="substance" id="substance" name="substance">
+<listOfUnits>
+<unit metaid="CDMT00106" kind="mole"/>
+</listOfUnits>
+</unitDefinition>
+<unitDefinition metaid="volume" id="volume" name="volume">
+<listOfUnits>
+<unit metaid="CDMT00107" kind="litre"/>
+</listOfUnits>
+</unitDefinition>
+<unitDefinition metaid="area" id="area" name="area">
+<listOfUnits>
+<unit metaid="CDMT00108" kind="metre" exponent="2"/>
+</listOfUnits>
+</unitDefinition>
+<unitDefinition metaid="length" id="length" name="length">
+<listOfUnits>
+<unit metaid="CDMT00109" kind="metre"/>
+</listOfUnits>
+</unitDefinition>
+<unitDefinition metaid="time" id="time" name="time">
+<listOfUnits>
+<unit metaid="CDMT00116" kind="second"/>
+</listOfUnits>
+</unitDefinition>
+</listOfUnitDefinitions>
+<listOfCompartments>
+<compartment metaid="default" id="default" size="1" units="volume"/>
+</listOfCompartments>
+<listOfSpecies>
+<species metaid="s1" id="L_tryptophan" name="L-tryptophan" compartment="default" initialAmount="16" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s2" id="L_formyl_kyn" name="L_formyl_kyneurenine" compartment="default" initialAmount="0">
+<annotation/>
+</species>
+<species metaid="CDMT00001" id="O2" name="O2" compartment="default" initialAmount="1000" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s4" id="Hydroxyurenine" name="Hydroxyurenine" compartment="default" initialAmount="0">
+<annotation/>
+</species>
+<species metaid="s18" id="NADPH" name="NADPH" compartment="default" initialAmount="400" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s5" id="Hydroxyanthranilate" name="Hydroxyanthranilate" compartment="default" initialAmount="0">
+<annotation/>
+</species>
+<species metaid="s6" id="Quinolinate" name="Quinolinate" compartment="default" initialAmount="0" hasOnlySubstanceUnits="true" charge="0">
+<annotation/>
+</species>
+<species metaid="s7" id="NaMN" name="NaMN" compartment="default" initialAmount="0">
+<annotation/>
+</species>
+<species metaid="s15" id="PRPP" name="PRPP" compartment="default" initialAmount="1000" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s21" id="PPi" name="PPi" compartment="default" initialAmount="1" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s9" id="NaAD" name="NaAD" compartment="default" initialAmount="0" hasOnlySubstanceUnits="true" charge="0">
+<annotation/>
+</species>
+<species metaid="s10" id="NAD" name="NAD" compartment="default" initialAmount="0" hasOnlySubstanceUnits="true" charge="0">
+<annotation/>
+</species>
+<species metaid="s11" id="NMN" name="NMN" compartment="default" initialAmount="0">
+<annotation/>
+</species>
+<species metaid="s16" id="ATP" name="ATP" compartment="default" initialAmount="1000" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0">
+<annotation/>
+</species>
+<species metaid="CDMT00044" id="NH3" name="NH3" compartment="default" initialAmount="100" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s19" id="Glutamine" name="Glutamine" compartment="default" initialAmount="600" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s12" id="NADP" name="NADP" compartment="default" initialAmount="0" hasOnlySubstanceUnits="true" charge="0">
+<annotation/>
+</species>
+<species metaid="s17" id="Nam" name="Nam" compartment="default" initialAmount="0">
+<annotation/>
+</species>
+<species metaid="CDMT00059" id="ADPribose" name="ADPribose" compartment="default" initialAmount="0" hasOnlySubstanceUnits="true" charge="0">
+<annotation/>
+</species>
+<species metaid="CDMT00060" id="ADPriboseP" name="ADPriboseP" compartment="default" initialAmount="0" hasOnlySubstanceUnits="true" charge="0">
+<annotation/>
+</species>
+<species metaid="s3" id="L_kyneurenine" name="L_kyneurenine" compartment="default" initialConcentration="0" charge="0">
+<annotation/>
+</species>
+<species metaid="s20" id="Arginine_protein" name="Arginine_protein" compartment="default" initialAmount="1000" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="CDMT00092" id="NR" name="NR" compartment="default" initialAmount="0">
+<annotation/>
+</species>
+<species metaid="s22" id="P" name="P" compartment="default" initialAmount="1000" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s25" id="R1P" name="R1P" compartment="default" initialAmount="50" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s26" id="Na" name="Na" compartment="default" initialAmount="10" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0">
+<annotation/>
+</species>
+<species metaid="s27" id="s27" name="NAD sink" compartment="default" initialAmount="10" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s28" id="s28" name="NADP sink" compartment="default" initialAmount="10" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s29" id="s29" name="s29" compartment="default" initialAmount="10" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s30" id="s30" name="s30" compartment="default" initialAmount="10" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+<species metaid="s31" id="s31" name="s31" compartment="default" initialAmount="10" hasOnlySubstanceUnits="true" boundaryCondition="true" charge="0" constant="true">
+<annotation/>
+</species>
+</listOfSpecies>
+<listOfParameters>
+<parameter metaid="J9_Kcat_NADSYN1_Gln" id="J9_Kcat_NADSYN1_Gln" name="J9_Kcat_NADSYN1_Gln" value="7.985" units="substance"/>
+<parameter metaid="J9_Et_NADSYN1_Gln" id="J9_Et_NADSYN1_Gln" name="J9_Et_NADSYN1_Gln" value="0.011831863" units="substance"/>
+<parameter metaid="J10_Kcat_NADSYN1_NH3" id="J10_Kcat_NADSYN1_NH3" name="J10_Kcat_NADSYN1_NH3" value="7.985" units="substance"/>
+<parameter metaid="J10_Et_NADSYN1_NH3" id="J10_Et_NADSYN1_NH3" name="J10_Et_NADSYN1_NH3" value="0.011831863" units="substance"/>
+<parameter metaid="J1_Kcat_TDO" id="J1_Kcat_TDO" name="J1_Kcat_TDO" value="1.4" units="substance"/>
+<parameter metaid="J1_Et_TDO" id="J1_Et_TDO" name="J1_Et_TDO" value="0.021027735" units="substance"/>
+<parameter metaid="J2_Kcat_AFMID" id="J2_Kcat_AFMID" name="J2_Kcat_AFMID" value="0.008855" units="substance"/>
+<parameter metaid="J2_Et_AFMID" id="J2_Et_AFMID" name="J2_Et_AFMID" value="0.3896883" units="substance"/>
+<parameter metaid="J3_Kcat_KMO" id="J3_Kcat_KMO" name="J3_Kcat_KMO" value="2.2" units="substance"/>
+<parameter metaid="J3_Et_KMO" id="J3_Et_KMO" name="J3_Et_KMO" value="0.4514211" units="substance"/>
+<parameter metaid="J4_Kcat_KYNU" id="J4_Kcat_KYNU" name="J4_Kcat_KYNU" value="0.1435" units="substance"/>
+<parameter metaid="J4_Et_KYNU" id="J4_Et_KYNU" name="J4_Et_KYNU" value="0.31059315" units="substance"/>
+<parameter metaid="J5_Kcat_3HAO" id="J5_Kcat_3HAO" name="J5_Kcat_3HAO" value="64" units="substance"/>
+<parameter metaid="J5_Et_3HAO" id="J5_Et_3HAO" name="J5_Et_3HAO" value="3.0634902" units="substance"/>
+<parameter metaid="J6_Kcat_QaPRT" id="J6_Kcat_QaPRT" name="J6_Kcat_QaPRT" value="0.2555" units="substance"/>
+<parameter metaid="J6_Et_QaPRT" id="J6_Et_QaPRT" name="J6_Et_QaPRT" value="0.25271865" units="substance"/>
+<parameter metaid="J7_Kcat_NMNAT_A" id="J7_Kcat_NMNAT_A" name="J7_Kcat_NMNAT_A" value="42.9" units="substance"/>
+<parameter metaid="J7_Et_NMNAT_A" id="J7_Et_NMNAT_A" name="J7_Et_NMNAT_A" value="0.021124193" units="substance"/>
+<parameter metaid="J8_Kcat_NMNAT_B" id="J8_Kcat_NMNAT_B" name="J8_Kcat_NMNAT_B" value="53.85" units="substance"/>
+<parameter metaid="J8_Et_NMNAT_B" id="J8_Et_NMNAT_B" name="J8_Et_NMNAT_B" value="0.021124193" units="substance"/>
+<parameter metaid="J11_Kcat_NADK" id="J11_Kcat_NADK" name="J11_Kcat_NADK" value="21.93" units="substance"/>
+<parameter metaid="J11_Et_NADK" id="J11_Et_NADK" name="J11_Et_NADK" value="0.003202389" units="substance"/>
+<parameter metaid="J12_Kcat_NADG" id="J12_Kcat_NADG" name="J12_Kcat_NADG" value="4.85e-07" units="substance"/>
+<parameter metaid="J12_Et_NADG" id="J12_Et_NADG" name="J12_Et_NADG" value="0.04051215" units="substance"/>
+<parameter metaid="J13_Kcat_NADPN" id="J13_Kcat_NADPN" name="J13_Kcat_NADPN" value="1.11e-07" units="substance"/>
+<parameter metaid="J13_Et_NADPN" id="J13_Et_NADPN" name="J13_Et_NADPN" value="0.015008787" units="substance"/>
+<parameter metaid="J14_Kcat_PARP" id="J14_Kcat_PARP" name="J14_Kcat_PARP" value="50.367" units="substance"/>
+<parameter metaid="J14_Et_PARP" id="J14_Et_PARP" name="J14_Et_PARP" value="0.4900041" units="substance"/>
+<parameter metaid="J15_Kcat_ARTD" id="J15_Kcat_ARTD" name="J15_Kcat_ARTD" value="294.755" units="substance"/>
+<parameter metaid="J15_Et_ARTD" id="J15_Et_ARTD" name="J15_Et_ARTD" value="0.017053686" units="substance"/>
+<parameter metaid="J16_Kcat_NUDT12" id="J16_Kcat_NUDT12" name="J16_Kcat_NUDT12" value="10.5" units="substance"/>
+<parameter metaid="J16_Et_NUDT12" id="J16_Et_NUDT12" name="J16_Et_NUDT12" value="0.04359879" units="substance"/>
+<parameter metaid="J17_Kcat_NAPRT" id="J17_Kcat_NAPRT" name="J17_Kcat_NAPRT" value="0.0077" units="substance"/>
+<parameter metaid="J17_Et_NAPRT" id="J17_Et_NAPRT" name="J17_Et_NAPRT" value="1.22115195" units="substance"/>
+<parameter metaid="J18_Kcat_NT5E" id="J18_Kcat_NT5E" name="J18_Kcat_NT5E" value="8e-10" units="substance"/>
+<parameter metaid="J18_Et_NT5E" id="J18_Et_NT5E" name="J18_Et_NT5E" value="0.036943223" units="substance"/>
+<parameter metaid="J19_Kcat_NRP" id="J19_Kcat_NRP" name="J19_Kcat_NRP" value="8e-10" units="substance"/>
+<parameter metaid="J19_Et_NRP" id="J19_Et_NRP" name="J19_Et_NRP" value="0.558168686" units="substance"/>
+<parameter metaid="J20_Kcat_NRK" id="J20_Kcat_NRK" name="J20_Kcat_NRK" value="0.581" units="substance"/>
+<parameter metaid="J20_Et_NRK" id="J20_Et_NRK" name="J20_Et_NRK" value="0.09067005" units="substance"/>
+<parameter metaid="J21_Kcat_Namase" id="J21_Kcat_Namase" name="J21_Kcat_Namase" value="1.3e-11" units="substance"/>
+<parameter metaid="J21_Et_Namase" id="J21_Et_Namase" name="J21_Et_Namase" value="0.3896883" units="substance"/>
+<parameter metaid="J22_Kcat_NAPRT" id="J22_Kcat_NAPRT" name="J22_Kcat_NAPRT" value="0.25" units="substance"/>
+<parameter metaid="J22_Et_NAPRT" id="J22_Et_NAPRT" name="J22_Et_NAPRT" value="0.54980775" units="substance"/>
+</listOfParameters>
+<listOfReactions>
+<reaction metaid="re1" id="re1" name="J1_TDO" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00003" species="L_tryptophan"/>
+<speciesReference metaid="CDMT00004" species="O2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00005" species="L_formyl_kyn"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00006">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F1 </ci>
+<ci> J1_Kcat_TDO </ci>
+<ci> J1_Et_TDO </ci>
+<ci> L_tryptophan </ci>
+<ci> O2 </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> L_tryptophan </ci>
+<ci> O2 </ci>
+</apply>
+<apply>
+<times/>
+<ci> J1_K_TDO </ci>
+<ci> J1_K_O2 </ci>
+</apply>
+<apply>
+<times/>
+<ci> L_tryptophan </ci>
+<ci> J1_K_O2 </ci>
+</apply>
+<apply>
+<times/>
+<ci> O2 </ci>
+<ci> J1_K_TDO </ci>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="J1_V_TDO" id="J1_V_TDO" value="0.029438829" units="substance"/>
+<parameter metaid="F1" id="F1" value="1" units="substance"/>
+<parameter metaid="J1_K_TDO" id="J1_K_TDO" value="222" units="substance"/>
+<parameter metaid="J1_K_O2" id="J1_K_O2" value="42" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re2" id="re2" name="J2_AFMID" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00011" species="L_formyl_kyn"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00012" species="L_kyneurenine"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00007">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F2 </ci>
+<ci> J2_Kcat_AFMID </ci>
+<ci> J2_Et_AFMID </ci>
+<ci> L_formyl_kyn </ci>
+</apply>
+<apply>
+<plus/>
+<ci> L_formyl_kyn </ci>
+<ci> J2_K_AFMID </ci>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="J2_V_AFMID" id="J2_V_AFMID" value="0.00345069" units="substance"/>
+<parameter metaid="F2" id="F2" value="1" units="substance"/>
+<parameter metaid="J2_K_AFMID" id="J2_K_AFMID" value="50" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re3" id="re3" name="J3_KMO" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00014" species="L_kyneurenine"/>
+<speciesReference metaid="CDMT00015" species="NADPH"/>
+<speciesReference metaid="CDMT00016" species="O2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00017" species="Hydroxyurenine"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00018">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F3 </ci>
+<ci> J3_Kcat_KMO </ci>
+<ci> J3_Et_KMO </ci>
+<ci> L_kyneurenine </ci>
+<ci> NADPH </ci>
+<ci> O2 </ci>
+</apply>
+<apply>
+<times/>
+<ci> K3_Kyn </ci>
+<ci> K3_NADPH </ci>
+<ci> K3_O2 </ci>
+</apply>
+</apply>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> L_kyneurenine </ci>
+<ci> K3_Kyn </ci>
+</apply>
+<apply>
+<divide/>
+<ci> NADPH </ci>
+<ci> K3_NADPH </ci>
+</apply>
+<apply>
+<divide/>
+<ci> O2 </ci>
+<ci> K3_O2 </ci>
+</apply>
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> L_kyneurenine </ci>
+<ci> NADPH </ci>
+<ci> O2 </ci>
+</apply>
+<apply>
+<times/>
+<ci> K3_Kyn </ci>
+<ci> K3_NADPH </ci>
+<ci> K3_O2 </ci>
+</apply>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F3" id="F3" value="1" units="substance"/>
+<parameter metaid="J3_V_KMO" id="J3_V_KMO" value="0.99312642" units="substance"/>
+<parameter metaid="K3_Kyn" id="K3_Kyn" value="100" units="substance"/>
+<parameter metaid="K3_NADPH" id="K3_NADPH" value="153" units="substance"/>
+<parameter metaid="K3_O2" id="K3_O2" value="71" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re4" id="re4" name="J4_KYNU" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00019" species="Hydroxyurenine"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00020" species="Hydroxyanthranilate"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference metaid="CDMT00021" species="L_kyneurenine"/>
+</listOfModifiers>
+<kineticLaw metaid="CDMT00022">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F4 </ci>
+<ci> J4_Kcat_KYNU </ci>
+<ci> J4_Et_KYNU </ci>
+<ci> Hydroxyurenine </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> J4_k_KYNU </ci>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> L_kyneurenine </ci>
+<ci> J_KYNU_ki </ci>
+</apply>
+</apply>
+</apply>
+<ci> Hydroxyurenine </ci>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F4" id="F4" value="1" units="substance"/>
+<parameter metaid="J4_k_KYNU" id="J4_k_KYNU" value="3" units="substance"/>
+<parameter metaid="J_KYNU_ki" id="J_KYNU_ki" value="20" units="substance"/>
+<parameter metaid="J4_V_KYNU" id="J4_V_KYNU" value="0.044570117" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re5" id="re5" name="J5_3HAO" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00023" species="Hydroxyanthranilate"/>
+<speciesReference metaid="CDMT00024" species="O2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00025" species="Quinolinate"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference metaid="CDMT00026" species="Quinolinate"/>
+</listOfModifiers>
+<kineticLaw metaid="CDMT00027">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F5 </ci>
+<ci> J5_Kcat_3HAO </ci>
+<ci> J5_Et_3HAO </ci>
+<apply>
+<divide/>
+<ci> O2 </ci>
+<apply>
+<plus/>
+<apply>
+<divide/>
+<cn type="integer"> 1 </cn>
+<ci> K5_HAO_O2 </ci>
+</apply>
+<ci> O2 </ci>
+</apply>
+</apply>
+<ci> Hydroxyanthranilate </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<apply>
+<divide/>
+<cn type="integer"> 1 </cn>
+<ci> K5_HAO </ci>
+</apply>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> Quinolinate </ci>
+<ci> Ki_QA_5 </ci>
+</apply>
+</apply>
+</apply>
+<ci> Hydroxyanthranilate </ci>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F5" id="F5" value="1" units="substance"/>
+<parameter metaid="J5_V_3HAO" id="J5_V_3HAO" value="196.0633728" units="substance"/>
+<parameter metaid="K5_HAO_O2" id="K5_HAO_O2" value="615" units="substance"/>
+<parameter metaid="K5_HAO" id="K5_HAO" value="16" units="substance"/>
+<parameter metaid="Ki_QA_5" id="Ki_QA_5" value="1800" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re6" id="re6" name="J6_QaPRT " reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00028" species="Quinolinate"/>
+<speciesReference metaid="CDMT00030" species="PRPP"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00029" species="NaMN"/>
+<speciesReference metaid="CDMT00031" species="PPi"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00032">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F6 </ci>
+<ci> J6_Kcat_QaPRT </ci>
+<ci> J6_Et_QaPRT </ci>
+<ci> Quinolinate </ci>
+<ci> PRPP </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> Quinolinate </ci>
+<ci> PRPP </ci>
+</apply>
+<apply>
+<times/>
+<ci> J6_K_QA </ci>
+<ci> J6_K_PRPP </ci>
+</apply>
+<apply>
+<times/>
+<ci> Quinolinate </ci>
+<ci> J6_K_PRPP </ci>
+</apply>
+<apply>
+<times/>
+<ci> PRPP </ci>
+<ci> J6_K_QA </ci>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F6" id="F6" value="1" units="substance"/>
+<parameter metaid="J6_V_QaPRT" id="J6_V_QaPRT" value="0.064569615" units="substance"/>
+<parameter metaid="J6_K_QA" id="J6_K_QA" value="21.6" units="substance"/>
+<parameter metaid="J6_K_PRPP" id="J6_K_PRPP" value="23.2" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re7" id="re7" name="J7_V_NMNAT_A" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00033" species="NaMN"/>
+<speciesReference metaid="CDMT00034" species="ATP"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00035" species="NaAD"/>
+<speciesReference metaid="CDMT00036" species="PPi"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00038">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F7 </ci>
+<ci> J7_Kcat_NMNAT_A </ci>
+<ci> J7_Et_NMNAT_A </ci>
+<ci> NaMN </ci>
+<ci> ATP </ci>
+</apply>
+<apply>
+<times/>
+<ci> K7_NaMN </ci>
+<ci> K7_ATP </ci>
+</apply>
+</apply>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> NaMN </ci>
+<ci> K7_NaMN </ci>
+</apply>
+<apply>
+<divide/>
+<ci> ATP </ci>
+<ci> K7_ATP </ci>
+</apply>
+<apply>
+<divide/>
+<ci> NaAD </ci>
+<ci> Ki7_NaAD </ci>
+</apply>
+<apply>
+<divide/>
+<ci> PPi </ci>
+<ci> Ki7_PPi </ci>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F7" id="F7" value="1" units="substance"/>
+<parameter metaid="J7_V_NMNAT_A" id="J7_V_NMNAT_A" value="0.906227858" units="substance"/>
+<parameter metaid="K7_NaMN" id="K7_NaMN" value="67.7" units="substance"/>
+<parameter metaid="K7_ATP" id="K7_ATP" value="58.5" units="substance"/>
+<parameter metaid="Ki7_NaAD" id="Ki7_NaAD" value="502.5" units="substance"/>
+<parameter metaid="Ki7_PPi" id="Ki7_PPi" value="390.4" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re8" id="re8" name="J8_NMNAT_B" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00039" species="NMN"/>
+<speciesReference metaid="CDMT00040" species="ATP"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00041" species="NAD"/>
+<speciesReference metaid="CDMT00042" species="PPi"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00043">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F8 </ci>
+<ci> J8_Kcat_NMNAT_B </ci>
+<ci> J8_Et_NMNAT_B </ci>
+<ci> NMN </ci>
+<ci> ATP </ci>
+</apply>
+<apply>
+<times/>
+<ci> K8_NMN </ci>
+<ci> K8_ATP </ci>
+</apply>
+</apply>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> NMN </ci>
+<ci> K8_NMN </ci>
+</apply>
+<apply>
+<divide/>
+<ci> ATP </ci>
+<ci> K8_ATP </ci>
+</apply>
+<apply>
+<divide/>
+<ci> NAD </ci>
+<ci> Ki8_NAD </ci>
+</apply>
+<apply>
+<divide/>
+<ci> PPi </ci>
+<ci> Ki8_PPi </ci>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F8" id="F8" value="1" units="substance"/>
+<parameter metaid="J8_V_NMNAT_B" id="J8_V_NMNAT_B" value="1.137537766" units="substance"/>
+<parameter metaid="K8_NMN" id="K8_NMN" value="22.3" units="substance"/>
+<parameter metaid="K8_ATP" id="K8_ATP" value="58.5" units="substance"/>
+<parameter metaid="Ki8_NAD" id="Ki8_NAD" value="418" units="substance"/>
+<parameter metaid="Ki8_PPi" id="Ki8_PPi" value="390.4" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re9" id="re9" name="J9_NADSYN1_Gln" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00045" species="ATP"/>
+<speciesReference metaid="CDMT00046" species="Glutamine"/>
+<speciesReference metaid="CDMT00047" species="NaAD"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00048" species="NAD"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00049">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F9 </ci>
+<ci> J9_Kcat_NADSYN1_Gln </ci>
+<ci> J9_Et_NADSYN1_Gln </ci>
+<ci> ATP </ci>
+<ci> Glutamine </ci>
+<ci> NaAD </ci>
+</apply>
+<apply>
+<times/>
+<ci> K9_ATP </ci>
+<ci> K9_Gln </ci>
+<ci> K9_NaAD </ci>
+</apply>
+</apply>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> ATP </ci>
+<ci> K9_ATP </ci>
+</apply>
+<apply>
+<divide/>
+<ci> Glutamine </ci>
+<ci> K9_Gln </ci>
+</apply>
+<apply>
+<divide/>
+<ci> NaAD </ci>
+<ci> K9_NaAD </ci>
+</apply>
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> ATP </ci>
+<ci> Glutamine </ci>
+<ci> NaAD </ci>
+</apply>
+<apply>
+<times/>
+<ci> K9_ATP </ci>
+<ci> K9_Gln </ci>
+<ci> K9_NaAD </ci>
+</apply>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F9" id="F9" value="1" units="substance"/>
+<parameter metaid="J9_V_NADSYN1_Gln" id="J9_V_NADSYN1_Gln" value="0.094477424" units="substance"/>
+<parameter metaid="K9_ATP" id="K9_ATP" value="89" units="substance"/>
+<parameter metaid="K9_Gln" id="K9_Gln" value="1440" units="substance"/>
+<parameter metaid="K9_NaAD" id="K9_NaAD" value="490" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re10" id="re10" name="J10_NADSYN1_NH3" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00050" species="NaAD"/>
+<speciesReference metaid="CDMT00051" species="ATP"/>
+<speciesReference metaid="CDMT00052" species="NH3"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00053" species="NAD"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00054">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F10 </ci>
+<ci> J10_Kcat_NADSYN1_NH3 </ci>
+<ci> J10_Et_NADSYN1_NH3 </ci>
+<ci> ATP </ci>
+<ci> NaAD </ci>
+<ci> NH3 </ci>
+</apply>
+<apply>
+<times/>
+<ci> K_10_ATP </ci>
+<ci> K_10_NaAD </ci>
+<ci> K_10_NH3 </ci>
+</apply>
+</apply>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> ATP </ci>
+<ci> K_10_ATP </ci>
+</apply>
+<apply>
+<divide/>
+<ci> NH3 </ci>
+<ci> K_10_NH3 </ci>
+</apply>
+<apply>
+<divide/>
+<ci> NaAD </ci>
+<ci> K_10_NaAD </ci>
+</apply>
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> ATP </ci>
+<ci> NH3 </ci>
+<ci> NaAD </ci>
+</apply>
+<apply>
+<times/>
+<ci> K_10_ATP </ci>
+<ci> K_10_NH3 </ci>
+<ci> K_10_NaAD </ci>
+</apply>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F10" id="F10" value="1" units="substance"/>
+<parameter metaid="J10_V_NADSYN1_NH3" id="J10_V_NADSYN1_NH3" value="0.094477424" units="substance"/>
+<parameter metaid="K_10_ATP" id="K_10_ATP" value="89" units="substance"/>
+<parameter metaid="K_10_NaAD" id="K_10_NaAD" value="490" units="substance"/>
+<parameter metaid="K_10_NH3" id="K_10_NH3" value="13000" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re11" id="re11" name="J11_NADK" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00055" species="ATP"/>
+<speciesReference metaid="CDMT00056" species="NAD"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00057" species="NADP"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00058">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F11 </ci>
+<ci> J11_Kcat_NADK </ci>
+<ci> J11_Et_NADK </ci>
+<ci> NAD </ci>
+<ci> ATP </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> K11_ATP </ci>
+<ci> K11_NAD </ci>
+</apply>
+<apply>
+<times/>
+<ci> NAD </ci>
+<ci> K11_ATP </ci>
+</apply>
+<apply>
+<times/>
+<ci> ATP </ci>
+<ci> K11_NAD </ci>
+</apply>
+<apply>
+<times/>
+<ci> NAD </ci>
+<ci> ATP </ci>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F11" id="F11" value="1" units="substance"/>
+<parameter metaid="J11_V_NADK" id="J11_V_NADK" value="0.070228391" units="substance"/>
+<parameter metaid="K11_ATP" id="K11_ATP" value="3300" units="substance"/>
+<parameter metaid="K11_NAD" id="K11_NAD" value="540" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re12" id="re12" name="J12_NADG" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00061" species="NAD"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00062" species="Nam"/>
+<speciesReference metaid="CDMT00063" species="ADPribose"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference metaid="CDMT00065" species="Nam"/>
+</listOfModifiers>
+<kineticLaw metaid="CDMT00066">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F12 </ci>
+<ci> J12_Kcat_NADG </ci>
+<ci> J12_Et_NADG </ci>
+<ci> NAD </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> K12_NAD </ci>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> Nam </ci>
+<ci> Ki_Nam </ci>
+</apply>
+</apply>
+</apply>
+<ci> NAD </ci>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F12" id="F12" value="1" units="substance"/>
+<parameter metaid="J12_V_NADG" id="J12_V_NADG" value="1.96e-08" units="substance"/>
+<parameter metaid="K12_NAD" id="K12_NAD" value="60" units="substance"/>
+<parameter metaid="Ki_Nam" id="Ki_Nam" value="920" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re13" id="re13" name="J13_NADPN" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00067" species="NADP"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00068" species="Nam"/>
+<speciesReference metaid="CDMT00069" species="ADPriboseP"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference metaid="CDMT00070" species="Nam"/>
+</listOfModifiers>
+<kineticLaw metaid="CDMT00071">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F13 </ci>
+<ci> J13_Kcat_NADPN </ci>
+<ci> J13_Et_NADPN </ci>
+<ci> NADP </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> K13_NADP </ci>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> Nam </ci>
+<ci> Ki_Nam </ci>
+</apply>
+</apply>
+</apply>
+<ci> NADP </ci>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F13" id="F13" value="1" units="substance"/>
+<parameter metaid="J13_V_NADPN" id="J13_V_NADPN" value="1.66e-09" units="substance"/>
+<parameter metaid="K13_NADP" id="K13_NADP" value="24" units="substance"/>
+<parameter metaid="CDMT00072" id="Ki_Nam" value="920" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re14" id="re14" name="J14_PARP" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00073" species="NAD"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00074" species="Nam"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference metaid="CDMT00075" species="Nam"/>
+</listOfModifiers>
+<kineticLaw metaid="CDMT00076">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F14 </ci>
+<ci> J14_Kcat_PARP </ci>
+<ci> J14_Et_PARP </ci>
+<ci> NAD </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> K14_NAD </ci>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> Nam </ci>
+<ci> Ki14_Nam </ci>
+</apply>
+</apply>
+</apply>
+<ci> NAD </ci>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F14" id="F14" value="1" units="substance"/>
+<parameter metaid="J14_V_PARP" id="J14_V_PARP" value="24.6800365" units="substance"/>
+<parameter metaid="K14_NAD" id="K14_NAD" value="20" units="substance"/>
+<parameter metaid="Ki14_Nam" id="Ki14_Nam" value="31" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re15" id="re15" name="J15_ARTD" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00077" species="NAD"/>
+<speciesReference metaid="CDMT00080" species="Arginine_protein"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00078" species="Nam"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference metaid="CDMT00079" species="Nam"/>
+</listOfModifiers>
+<kineticLaw metaid="CDMT00081">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F15 </ci>
+<ci> J15_Kcat_ARTD </ci>
+<ci> J15_Et_ARTD </ci>
+<apply>
+<divide/>
+<ci> Arginine_protein </ci>
+<apply>
+<plus/>
+<apply>
+<divide/>
+<cn type="integer"> 1 </cn>
+<ci> K15_Arg </ci>
+</apply>
+<ci> Arginine_protein </ci>
+</apply>
+</apply>
+<ci> NAD </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<apply>
+<divide/>
+<cn type="integer"> 1 </cn>
+<ci> K15_NAD </ci>
+</apply>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> Nam </ci>
+<ci> Ki_15_Nam </ci>
+</apply>
+</apply>
+</apply>
+<ci> NAD </ci>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F15" id="F15" value="1" units="substance"/>
+<parameter metaid="J15_V_ARTD" id="J15_V_ARTD" value="5.026659217" units="substance"/>
+<parameter metaid="K15_Arg" id="K15_Arg" value="3000" units="substance"/>
+<parameter metaid="Ki_15_Nam" id="Ki_15_Nam" value="370" units="substance"/>
+<parameter metaid="K15_NAD" id="K15_NAD" value="36" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re16" id="re16" name="J16_NADTU12" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00082" species="NAD"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00083" species="NMN"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference metaid="CDMT00084" species="NADPH"/>
+</listOfModifiers>
+<kineticLaw metaid="CDMT00085">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F16 </ci>
+<ci> J16_Kcat_NUDT12 </ci>
+<ci> J16_Et_NUDT12 </ci>
+<ci> NAD </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> K16_NAD </ci>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> NADPH </ci>
+<ci> Ki_16_NADPH </ci>
+</apply>
+</apply>
+</apply>
+<ci> NAD </ci>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F16" id="F16" value="1" units="substance"/>
+<parameter metaid="J16_V_NUDT12" id="J16_V_NUDT12" value="0.457787295" units="substance"/>
+<parameter metaid="K16_NAD" id="K16_NAD" value="190" units="substance"/>
+<parameter metaid="Ki_16_NADPH" id="Ki_16_NADPH" value="16" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re17" id="re17" name="J17_NAPRT" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00086" species="Nam"/>
+<speciesReference metaid="CDMT00087" species="PRPP"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00088" species="NMN"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference metaid="CDMT00089" species="ATP"/>
+<modifierSpeciesReference metaid="CDMT00090" species="NAD"/>
+</listOfModifiers>
+<kineticLaw metaid="CDMT00091">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F17 </ci>
+<ci> J17_Kcat_NAPRT </ci>
+<ci> J17_Et_NAPRT </ci>
+<ci> Nam </ci>
+<ci> PRPP </ci>
+</apply>
+<apply>
+<times/>
+<ci> K17_Nam </ci>
+<ci> K17_PRPP </ci>
+</apply>
+</apply>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> Nam </ci>
+<ci> K17_Nam </ci>
+</apply>
+<apply>
+<divide/>
+<ci> PRPP </ci>
+<ci> K17_PRPP </ci>
+</apply>
+<apply>
+<divide/>
+<ci> NAD </ci>
+<ci> Ki17_NAD </ci>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F17" id="F17" value="1" units="substance"/>
+<parameter metaid="J17_NAPRT" id="J17_NAPRT" value="1" units="substance"/>
+<parameter metaid="K17_Nam" id="K17_Nam" value="0.005" units="substance"/>
+<parameter metaid="K17_PRPP" id="K17_PRPP" value="0.63" units="substance"/>
+<parameter metaid="Ki17_NAD" id="Ki17_NAD" value="2.1" units="substance"/>
+<parameter metaid="Ki17_NADH" id="Ki17_NADH" value="3.2" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re18" id="re18" name="J18_NT5E" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00093" species="NMN"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00094" species="P"/>
+<speciesReference metaid="CDMT00095" species="NR"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference metaid="CDMT00096" species="ATP"/>
+</listOfModifiers>
+<kineticLaw metaid="CDMT00097">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F18 </ci>
+<ci> J18_Kcat_NT5E </ci>
+<ci> J18_Et_NT5E </ci>
+<ci> NMN </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> K_18_NMN </ci>
+<apply>
+<plus/>
+<cn type="integer"> 1 </cn>
+<apply>
+<divide/>
+<ci> ATP </ci>
+<ci> Ki18_ATP </ci>
+</apply>
+</apply>
+</apply>
+<ci> NMN </ci>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="J18_V_NT5E" id="J18_V_NT5E" value="2.9e-11" units="substance"/>
+<parameter metaid="F18" id="F18" value="1" units="substance"/>
+<parameter metaid="K_18_NMN" id="K_18_NMN" value="4900" units="substance"/>
+<parameter metaid="Ki18_ATP" id="Ki18_ATP" value="120" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re19" id="re19" name="J19_NRP " reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00002" species="NR"/>
+<speciesReference metaid="CDMT00008" species="P"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00009" species="Nam"/>
+<speciesReference metaid="CDMT00010" species="R1P"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00100">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F19 </ci>
+<ci> J19_Kcat_NRP </ci>
+<ci> J19_Et_NRP </ci>
+<ci> NR </ci>
+<ci> P </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> P </ci>
+<ci> NR </ci>
+</apply>
+<apply>
+<times/>
+<ci> J19_K_NR </ci>
+<ci> J19_K_P </ci>
+</apply>
+<apply>
+<times/>
+<ci> NR </ci>
+<ci> J19_K_P </ci>
+</apply>
+<apply>
+<times/>
+<ci> P </ci>
+<ci> J19_K_NR </ci>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F19" id="F19" value="1" units="substance"/>
+<parameter metaid="J19_V_NRP" id="J19_V_NRP" value="4.46e-10" units="substance"/>
+<parameter metaid="J19_K_NR" id="J19_K_NR" value="3000" units="substance"/>
+<parameter metaid="J19_K_P" id="J19_K_P" value="100" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re20" id="re20" name="J20_NRK" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00101" species="NR"/>
+<speciesReference metaid="CDMT00102" species="ATP"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00103" species="NMN"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00104">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F20 </ci>
+<ci> J20_Kcat_NRK </ci>
+<ci> J20_Et_NRK </ci>
+<ci> NR </ci>
+<ci> ATP </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> NR </ci>
+<ci> ATP </ci>
+</apply>
+<apply>
+<times/>
+<ci> J20_K_NR </ci>
+<ci> J20_K_ATP </ci>
+</apply>
+<apply>
+<times/>
+<ci> NR </ci>
+<ci> J20_K_ATP </ci>
+</apply>
+<apply>
+<times/>
+<ci> ATP </ci>
+<ci> J20_K_NR </ci>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F20" id="F20" name="1" value="1" units="substance"/>
+<parameter metaid="J20_V_NRK" id="J20_V_NRK" value="0.052679299" units="substance"/>
+<parameter metaid="J20_K_NR" id="J20_K_NR" value="5" units="substance"/>
+<parameter metaid="J20_K_ATP" id="J20_K_ATP" value="330" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re22" id="re22" name="J22_NAPRT" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00110" species="Na"/>
+<speciesReference metaid="CDMT00111" species="PRPP"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00112" species="NaMN"/>
+<speciesReference metaid="CDMT00113" species="PPi"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference metaid="CDMT00114" species="P"/>
+</listOfModifiers>
+<kineticLaw metaid="CDMT00115">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<divide/>
+<apply>
+<times/>
+<ci> F22 </ci>
+<ci> J22_Kcat_NAPRT </ci>
+<ci> J22_Et_NAPRT </ci>
+<ci> Na </ci>
+<ci> PRPP </ci>
+</apply>
+<apply>
+<plus/>
+<apply>
+<times/>
+<ci> PRPP </ci>
+<ci> Na </ci>
+</apply>
+<apply>
+<times/>
+<ci> J22_K_Na </ci>
+<ci> J22_K_PRPP </ci>
+</apply>
+<apply>
+<times/>
+<ci> Na </ci>
+<ci> J22_K_PRPP </ci>
+</apply>
+<apply>
+<times/>
+<ci> PRPP </ci>
+<ci> J22_K_Na </ci>
+</apply>
+</apply>
+</apply>
+</math>
+<listOfParameters>
+<parameter metaid="F22" id="F22" value="1" units="substance"/>
+<parameter metaid="J22_V_NAPRT" id="J22_V_NAPRT" value="0.137451938" units="substance"/>
+<parameter metaid="J22_K_Na" id="J22_K_Na" value="27.3" units="substance"/>
+<parameter metaid="J22_K_PRPP" id="J22_K_PRPP" value="38.2" units="substance"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+<reaction metaid="re23" id="re23" name="re23" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00013" species="NAD"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00037" species="s27"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00064">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/>
+<cn type="e-notation"> 1 <sep/> -6 </cn>
+<ci> NAD </ci>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<reaction metaid="re25" id="re25" name="re25" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00117" species="NADP"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00118" species="s28"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00119">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/>
+<cn> 0.001 </cn>
+<ci> NADP </ci>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<reaction metaid="re26" id="re26" name="re26" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00098" species="PPi"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00099" species="s29"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00105">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/>
+<cn> 0.001 </cn>
+<ci> PPi </ci>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<reaction metaid="re27" id="re27" name="re27" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00120" species="ADPriboseP"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00121" species="s30"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00122">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/>
+<cn> 0.001 </cn>
+<ci> ADPriboseP </ci>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<reaction metaid="re28" id="re28" name="re28" reversible="false" fast="false">
+<annotation/>
+<listOfReactants>
+<speciesReference metaid="CDMT00123" species="ADPribose"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CDMT00124" species="s31"/>
+</listOfProducts>
+<kineticLaw metaid="CDMT00125">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/>
+<cn> 0.001 </cn>
+<ci> ADPribose </ci>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+</listOfReactions>
+</model>
+</sbml>
